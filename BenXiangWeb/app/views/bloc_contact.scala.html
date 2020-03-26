@@ -1,0 +1,14 @@
+ @bloc_frame("联系我们", "contactApp", "contactController") {
+<meta charset="UTF-8">
+ <link rel="stylesheet" href='@routes.Assets.at("pc_css/news2.css")'>
+ <script src='@routes.Assets.at("js/controllers/bloc_contact_controller.js")'></script>
+
+<div class="news2" ng-repeat="contact in contacts">
+	<div class="mwen2">
+	 	<h1 ng-bind="contact.name"></h1>
+	 	<p class="p1new" ng-bind="contact.createdAtStr"></p>
+		<p class="p2new" ng-bind-html="contact.description1 | safehtmls" ></p>
+	</div>
+</div>
+
+}

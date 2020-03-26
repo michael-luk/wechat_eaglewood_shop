@@ -1,0 +1,143 @@
+@(title: String, app: String, controller: String)(content: Html)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>中国本香集团-@title</title>
+
+        <link rel="stylesheet" href='@routes.Assets.at("pc_css/blocCommon.css")' />
+        <link rel="stylesheet"  href='@routes.Assets.at("css/font-awesome.min.css")'>
+
+        <script src='@routes.Assets.at("js/angular.min.js")'></script>
+        <script src='@routes.Assets.at("js/jquery-1.11.1.min.js")'></script>
+        <script src='@routes.Assets.at("pc_js/bloc.js")'></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="header_body">
+                <div class="header_top clear">
+                    <div class="left">
+                        <span>欢迎光临本香集团官方网站！</span>
+                        <a href="/p/home">进入商城>></a>
+                    </div>
+                    <div class="right">
+                        <ul class="clear right_ul">
+                            <li><i class="icon-phone"></i>400-400-400</li>
+                            <li><i class=" icon-heart"></i> 收藏本站</li>
+                            <li onmouseover="mOver(4)" onmouseout="mOut(4)" id="4">
+                                关注我们<i class="icon-qrcode"></i>
+                                <div class="erwei " id="c4">
+                                    <img src='@routes.Assets.at("pc_images/erwei.png")'>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_top clear">
+                <img src='@routes.Assets.at("pc_images/toplogo.png")'>
+            </div>
+            <div class="menu_div">
+                <ul class="clear menu_ul">
+                    <a href="/b/home">
+                        <li>首页</li>
+                    </a>
+                    <li onmouseover="mOver(1)" onmouseout="mOut(1)" id="1">
+                        产业基地<i class=" icon-caret-down "></i>
+                        <ul class="navdisplyas" id="c1">
+                            <a href="/b/matrixa">
+                                <li>连州基地<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/b/matrixb">
+                                <li>那洲基地<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/">
+                                <li>实时监控<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/">
+                                <li>3D地图<i class=" icon-caret-right"></i> </li>
+                            </a>
+                        </ul>
+                    </li>
+                    <a href="/p/home">
+                        <li>产品中心</li>
+                    </a>
+                    <a href="/b/join">
+                        <li>招商加盟</li>
+                    </a>
+                    <li onmouseover="mOver(2)" onmouseout="mOut(2)" id="2">
+                        新闻动态<i class=" icon-caret-down "></i>
+                        <ul class="navdisplyas" id="c2">
+                            <a href="/b/intro">
+                                <li>公司动态<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/b/intro">
+                                <li>媒体报道<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/b/news">
+                                <li>行业资讯<i class=" icon-caret-right"></i> </li>
+                            </a>
+                        </ul>
+                    </li>
+                    <li onmouseover="mOver(3)" onmouseout="mOut(3)" id="3">
+                        关于本香<i class=" icon-caret-down "></i>
+                        <ul class="navdisplyas" id="c3">
+                            <a href="/b/profile">
+                                <li>公司概况<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/b/history">
+                                <li>发展历程<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/b/honor">
+                                <li>资质荣誉<i class=" icon-caret-right"></i> </li>
+                            </a>
+                            <a href="/b/chairman">
+                                <li>董事长致辞<i class=" icon-caret-right"></i> </li>
+                            </a>
+                        </ul>
+                    </li>
+                    <a href="/b/add">
+                        <li>加入本香</li>
+                    </a>
+                    <a href="/b/contact">
+                        <li>联系我们</li>
+                    </a>
+                </ul>
+            </div>
+        </header>
+
+        <div style="min-height:500px;margin:auto;" ng-app="@app" ng-controller="@controller">@content</div>
+
+        <footer>
+            <div class="clear footer_main">
+                <div class="bottom_logo left">
+                    <img src='@routes.Assets.at("pc_images/logo_buttom.png")'>
+                </div>
+                <div class="bottom_txt left">
+                    <ul class="clear txt_ul">
+                        <a href="/b/contact"><li>关于本香</li></a>
+                        <a href="/b/matrixa"><li>产业基地</li></a>
+                        <a href="/b/intro"><li>新闻中心</li></a>
+                        <a href="/p/home"><li>产品中心</li></a>
+                        <a href="/b/join"><li>招商加盟</li></a>
+                        <a href="/b/add"><li>加入本香</li></a>
+                        <a href="/b/contact"><li style="border: none">联系我们</li></a>
+                    </ul>
+                    <p>Copyright © 2016 yf-china.com Inc. All Rights Reserved. 中国本香生态集团 版权所有  粤ICP备粤ICP备16028587号</p>
+                </div>
+                <div class="bottom_erwei left">
+                    <img src='@routes.Assets.at("pc_images/erwei.png")'>
+                </div>
+            </div>
+        </footer>
+
+        <a href="#">
+            <div style="width: 60px; position: fixed; bottom: 20%; right: 8%;">
+                <img src='@routes.Assets.at("pc_images/left_big.png")'>
+            </div>
+        </a>
+
+    </body>
+</html>

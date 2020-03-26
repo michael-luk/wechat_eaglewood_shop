@@ -1,0 +1,13 @@
+@bloc_frame("董事长致辞", "chairman2App", "chairman2Controller") {
+<meta charset="UTF-8">
+ <link rel="stylesheet" href='@routes.Assets.at("pc_css/news2.css")'>
+ <script src='@routes.Assets.at("js/controllers/bloc_chairman2_controller.js")'></script>
+
+<div class="news2">
+	<div class="mwen2">
+		<p class="p2new" ng-bind-html="chairman2.description1 | safehtmls" ></p>
+	</div>
+
+</div>
+
+}

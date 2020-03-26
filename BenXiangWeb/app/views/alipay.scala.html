@@ -1,0 +1,44 @@
+@dm_frame("付款", "", "") {
+    <script src='@routes.Assets.at("js/controllers/pay_controller.js")'></script>
+    <link rel="stylesheet" type="text/css" href='@routes.Assets.at("css/pay.css")' />
+    <meta charset="utf-8">
+    <header>
+        <div class="logo">
+            <img src='@routes.Assets.at("images/logo.png")'>
+        </div>
+    </header>
+    <section>
+        <div class="weixin">
+            <p class="weixin-p1">请在<span style="color:#f08300 ;"> 2小时 </span>之内完成网上支付，否则系统将自动取消订单</p>
+            <p class="weixin-p1">收到货品后请在<span style="color:#f08300 ;"> 七天 </span>之内对订单进行收货确认，否则系统将自动确认</p>
+        </div>
+        <div class="weixin2">
+            <p class="myOrder-p2">
+                <span> 订单编号：<span>@flash.get("orderNo")</span>
+                    <br>
+                    订单总价：<span>@flash.get("orderAmount")元</span>
+                </span>
+            </p>
+        </div>
+        <p class="newpay-p3" >
+            <span id="wxpayAmountDisplay" style="color:#f08300 ;"> 您需要支付：@flash.get("orderAmount") 元</span>
+        </p>
+        <div>
+            <form id="pay_form" method="POST" action="https://mapi.alipay.com/gateway.do?_input_charset=utf-8">
+                <input type="hidden" name="service" value="@flash.get("service")"/>
+                <input type="hidden" name="partner" value="@flash.get("partner")"/>
+                <input type="hidden" name="_input_charset" value="@flash.get("_input_charset")"/>
+                <input type="hidden" name="payment_type" value="@flash.get("payment_type")"/>
+                <input type="hidden" name="notify_url" value="@flash.get("notify_url")"/>
+                <input type="hidden" name="return_url" value="@flash.get("return_url")"/>
+                <input type="hidden" name="seller_email" value="@flash.get("seller_email")"/>
+                <input type="hidden" name="out_trade_no" value="@flash.get("out_trade_no")"/>
+                <input type="hidden" name="total_fee" value="@flash.get("total_fee")"/>
+                <input type="hidden" name="subject" value="@flash.get("subject")"/>
+                <input type="hidden" name="sign" value="@flash.get("sign")"/>
+                <input type="hidden" name="sign_type" value="@flash.get("sign_type")"/>
+                <input type="submit" id="wxpaybtn" value="支付宝支付" style="border: 1px solid #129cf5;background-color: #129cf5;width: 80%;color: #fff;font-size: 20px;padding: 2% 0; margin: 7% auto; margin-left: 10%;"/>
+            </form>
+        </div>
+    </section>
+}

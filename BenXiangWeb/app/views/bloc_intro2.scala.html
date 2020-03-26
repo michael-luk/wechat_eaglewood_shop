@@ -1,0 +1,15 @@
+@bloc_frame("公司动态", "intro2App", "intro2Controller") {
+<meta charset="UTF-8">
+ <link rel="stylesheet" href='@routes.Assets.at("pc_css/news2.css")'>
+ <script src='@routes.Assets.at("js/controllers/bloc_intro2_controller.js")'></script>
+
+<div class="news2">
+	<div class="mwen2">
+		<h1 ng-bind="intro2.name"></h1>
+		<p class="p1new" ng-bind="intro2.createdAtStr"></p>
+		<p class="p2new" ng-bind-html="intro2.description1 | safehtmls" ></p>
+	</div>
+
+</div>
+
+}

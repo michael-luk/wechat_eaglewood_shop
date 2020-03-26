@@ -1,0 +1,12 @@
+ @bloc_frame("发展历程", "historyApp", "historyController") {
+<meta charset="UTF-8">
+ <link rel="stylesheet" href='@routes.Assets.at("pc_css/news2.css")'>
+ <script src='@routes.Assets.at("js/controllers/bloc_history_controller.js")'></script>
+
+<div class="news2" ng-repeat="history in historys">
+	<div class="mwen2">
+		<p class="p2new" ng-bind-html="history.description1 | safehtmls" ></p>
+	</div>
+</div>
+
+}

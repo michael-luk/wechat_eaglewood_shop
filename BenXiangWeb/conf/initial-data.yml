@@ -1,0 +1,525 @@
+users:
+  - !!models.UserModel
+    loginName: 18666911091
+    nickname: 萧霖
+    password: e10adc3949ba59abbe56e057f20f883e
+    userRole: 2
+    jifen: 100
+
+  - !!models.UserModel
+    loginName: 18675629612
+    nickname: 小燕
+    password: e10adc3949ba59abbe56e057f20f883e
+    userRole: 0
+    resellerCode: 123
+    isReseller: True
+    wxOpenId: 111
+    jifen: 110
+    
+  - !!models.UserModel
+    loginName: 18675629633
+    nickname: 小郑
+    password: e10adc3949ba59abbe56e057f20f883e
+    userRole: 1
+    jifen: 120
+    
+    
+# Promotion
+promotions:
+
+  - !!models.PromotionModel
+    promotionType: 满减优惠
+    title: 满500减100
+    reachMoney: 500
+    discount: 100
+    available: False
+
+  - !!models.PromotionModel
+    promotionType: 满减优惠
+    title: 满1000减300
+    reachMoney: 1000
+    discount: 300
+    available: False
+
+  - !!models.PromotionModel
+    promotionType: 满减优惠
+    title: 满800减200
+    reachMoney: 800
+    discount: 200
+    available: False
+
+  - !!models.PromotionModel
+    promotionType: 首单优惠
+    title: 首单优惠
+    discount: 10
+    available: False
+
+  - !!models.PromotionModel
+    promotionType: 普通优惠
+    title: 开张大吉下单即减
+    discount: 10
+    available: True
+
+  - !!models.PromotionModel
+    promotionType: 免运费
+    title: 免运费
+    reachMoney: 100
+    available: False
+
+# Shipinfos
+shipinfos:
+
+  - !!models.ShipInfoModel
+    name: 张三
+    phone: 13715673589
+    postCode: 516000
+    provice: 广东省
+    city: 珠海市
+    provice: 香洲区
+    location: 翠香路274号
+
+  - !!models.ShipInfoModel
+    name: 李斯
+    phone: 13715673614
+    postCode: 513000
+    provice: 广东省
+    city: 珠海市
+    provice: 香洲区
+    location: 安平大厦
+
+  - !!models.ShipInfoModel
+    name: 杨过
+    phone: 13715673451
+    postCode: 513085
+    provice: 广东省
+    city: 珠海市
+    provice: 香洲区
+    location: 中国银行
+
+# Shipareaprices
+shipareaprices:
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 富华里
+    shipPrice: 15
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 新香洲
+    shipPrice: 30
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 吉大
+    shipPrice: 30
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 兰埔
+    shipPrice: 20
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 南屏
+    shipPrice: 25
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 柠溪
+    shipPrice: 20
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 唐家湾
+    shipPrice: 50
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 夏湾
+    shipPrice: 0
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 拱北
+    shipPrice: 0
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 华发世纪城
+    shipPrice: 20
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 华发商都
+    shipPrice: 25
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 摩尔广场
+    shipPrice: 15
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 明珠商业广场
+    shipPrice: 30
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 前山
+    shipPrice: 25
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 湾仔
+    shipPrice: 50
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 香洲区
+    area: 香洲
+    shipPrice: 30
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 斗门区
+    area: 井岸
+    shipPrice: 80
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 金湾区
+    area: 红旗镇
+    shipPrice: 100
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 金湾区
+    area: 三灶镇
+    shipPrice: 100
+
+  - !!models.ShipAreaPriceModel
+    city: 珠海市
+    zone: 横琴新区
+    area: 横琴新区
+    shipPrice: 80
+
+# Company Info
+companys:
+
+  - !!models.common.CompanyModel
+    name: 东莞龙鑫酒业有限公司
+    location: 珠海富华里A座1203
+    phone: 400-678-0068
+    cellPhone: 18666911091
+    email: mail@zhenshang.com
+    weibo: longxinwb
+    barcodeImg1: weibo.png
+    qq: 17040643
+    weixin: 龙鑫酒业
+    barcodeImg2: weixin.png
+    description1: 东莞龙鑫酒业有限公司专注于定制酒产品的开发和定制酒文化的推广.
+    registerInfo1: Copyright © 2015-2016
+    registerInfo1: 粤ICP备145523559
+    logo1: logo.jpg
+
+
+# Catalogs
+catalogs:
+
+  - !!models.CatalogModel
+    name: 商务送礼
+    description: 我们只提供最好的铁皮石斛<br>(养生.健康.高端的商务礼品)
+    catalogIndex: 1
+    smallImages: xilie1.jpg
+    images: class1.jpg
+
+  - !!models.CatalogModel
+    name: 孝敬父母
+    description: 辛劳一生她们值得拥有!
+    catalogIndex: 2
+    smallImages: xilie2.jpg
+    images: class2.jpg
+
+  - !!models.CatalogModel
+    name: 家庭烹饪
+    description: 没有谁比家里的汤(她)更关爱你!<br>(适合家庭煲汤的两款选择)
+    catalogIndex: 3
+    smallImages: xilie3.jpg
+    images: class3.jpg
+
+  - !!models.CatalogModel
+    name: 商业洽谈
+    description: 高逼格商务洽谈首选,生意健康两不误!<br>(适合泡茶饮用的2款选择)
+    catalogIndex: 4
+    smallImages: xilie4.jpg
+    images: class4.jpg
+    
+  - !!models.CatalogModel
+    name: 我是第五个
+    description: 高逼格商务洽谈首选,生意健康两不误!<br>(适合泡茶饮用的2款选择)
+    catalogIndex: 5
+    smallImages: xilie4.jpg
+    images: class4.jpg
+    
+  - !!models.CatalogModel
+    name: 我是第六个
+    description: 高逼格商务洽谈首选,生意健康两不误!<br>(适合泡茶饮用的2款选择)
+    catalogIndex: 6
+    smallImages: xilie4.jpg
+    images: class4.jpg
+
+  - !!models.CatalogModel
+    name: 我是第七个
+    description: 高逼格商务洽谈首选,生意健康两不误!<br>(适合泡茶饮用的2款选择)
+    catalogIndex: 7
+    smallImages: xilie4.jpg
+    images: class4.jpg
+
+# Products
+products:
+
+  - !!models.ProductModel
+    name: 莲洲铁皮石斛 铁皮枫斗20G*1袋
+    images: product1.jpg
+    shortDesc: 胶多渣少,含有丰富营养,养生必备补品
+    price: 91
+    ml: 91
+    isHotSale: False
+    isZhaoPai: True
+    soldNumber: 200
+
+  - !!models.ProductModel
+    name: 莲洲铁皮石斛 孝敬父母20G*1袋
+    images: product2.jpg
+    shortDesc: 辛劳一生她们值得拥有!
+    price: 190
+    ml: 90
+    isHotSale: True
+    isZhaoPai: True
+    soldNumber: 1000
+
+  - !!models.ProductModel
+    name: 莲洲铁皮石斛 家庭烹饪20G*1袋
+    images: product3.jpg
+    shortDesc: 没有谁比家里的汤(她)更关爱你!
+    price: 90
+    ml: 70
+    isHotSale: True
+    isZhaoPai: True
+    soldNumber: 23123
+
+  - !!models.ProductModel
+    name: 莲洲铁皮石斛 商业洽谈20G*1袋
+    images: product5.jpg
+    shortDesc: 高逼格商务洽谈首选,生意健康两不误!
+    price: 60
+    ml: 60
+    isHotSale: False
+    isZhaoPai: True
+    soldNumber: 123123
+
+  - !!models.ProductModel
+    name: 小资情调
+    images: product6.jpg
+    shortDesc: 工作闲暇,修身养性
+    price: 170
+    ml: 80
+    isHotSale: False
+    isZhaoPai: True
+    soldNumber: 123
+
+  - !!models.ProductModel
+    name: 护肤养颜
+    images: product7.jpg
+    shortDesc: 补水润养,细腻柔嫩!
+    price: 40
+    ml: 40
+    isHotSale: True
+    isZhaoPai: True
+    soldNumber: 12312
+
+  - !!models.ProductModel
+    name: 天然绿茶
+    images: product8.jpg
+    shortDesc: 清新脱俗,天然韵味!
+    price: 70
+    ml: 100
+    isHotSale: False
+    isZhaoPai: True
+    soldNumber: 1231
+
+  - !!models.ProductModel
+    name: 自然鲜品
+    images: product9.jpg
+    shortDesc: 原汁原味,全面滋补
+    price: 40
+    ml: 50
+    isHotSale: False
+    isZhaoPai: True
+    soldNumber: 1
+
+
+# FoodComments
+foodcomments:
+
+  - !!models.FoodcommentModel
+    description: 小龙虾好吃
+    images: zhaopai1.jpg
+
+  - !!models.FoodcommentModel
+    description: 小龙虾好吃
+    images: zhaopai2.jpg
+
+  - !!models.FoodcommentModel
+    description: 水煮牛肉好吃
+    images: zhaopai3.jpg
+
+  - !!models.FoodcommentModel
+    description: 干锅田鸡好吃
+    images: zhaopai4.jpg
+
+  - !!models.FoodcommentModel
+    description: 赞一个,剁椒鱼头很正宗
+    images: zhaopai5.jpg
+
+  - !!models.FoodcommentModel
+    description: 螃蟹很划算
+    images: zhaopai6.jpg,xinpin3.jpg
+
+  - !!models.FoodcommentModel
+    description: 下次还会光顾
+    images: zhaopai7.jpg
+
+  - !!models.FoodcommentModel
+    description: 下次还会光顾
+    images: zhaopai8.jpg
+
+
+# Themes
+themes:
+
+  - !!models.ThemeModel
+    name: 不辣
+    images: zhaopai1.jpg,zhaopai2.jpg
+
+  - !!models.ThemeModel
+    name: 微辣
+    images: zhaopai1.jpg,zhaopai2.jpg
+
+  - !!models.ThemeModel
+    name: 麻辣
+    images: zhaopai1.jpg,zhaopai2.jpg
+
+  - !!models.ThemeModel
+    name: 不辣
+    images: zhaopai2.jpg,zhaopai1.jpg
+
+  - !!models.ThemeModel
+    name: 微辣
+    images: zhaopai2.jpg,zhaopai1.jpg
+
+  - !!models.ThemeModel
+    name: 麻辣
+    images: zhaopai2.jpg,zhaopai3.jpg
+
+  - !!models.ThemeModel
+    name: 不辣
+    images: zhaopai3.jpg
+
+  - !!models.ThemeModel
+    name: 微辣
+    images: zhaopai3.jpg,zhaopai2.jpg
+
+  - !!models.ThemeModel
+    name: 麻辣
+    images: zhaopai3.jpg
+
+  - !!models.ThemeModel
+    name: 不辣
+    images: zhaopai4.jpg,zhaopai2.jpg
+
+  - !!models.ThemeModel
+    name: 微辣
+    images: zhaopai4.jpg,zhaopai2.jpg
+
+  - !!models.ThemeModel
+    name: 麻辣
+    images: zhaopai4.jpg
+
+
+# shoppingCart
+shoppingcartitem:
+
+  - !!models.ShoppingCartItemModel
+    quantity: 2
+
+  - !!models.ShoppingCartItemModel
+    quantity: 3
+
+  - !!models.ShoppingCartItemModel
+    quantity: 1
+
+
+# Orders
+orders:
+
+  - !!models.OrderModel
+    orderNo: 100100100
+    price: 138
+    quantity: 2,1
+    themeName: 微辣
+    status: 4
+    shipName: 小拉
+    shipPhone: 12345678911
+    shipLocation: 珠海市香洲区安平大厦
+    promotionAmount: 20
+    productAmount: 181
+    amount: 171
+    shipFee: 10
+
+  - !!models.OrderModel
+    orderNo: 100100101
+    price: 99
+    quantity: 1
+    themeName: 中辣
+    status: 1
+
+  - !!models.OrderModel
+    orderNo: 100100101
+    price: 88
+    quantity: 1
+    themeName: 麻辣
+    status: 6
+
+# Infos
+infos:
+
+   - !!models.InfoModel
+     images: jiechan.jpg
+     classify: guanggao
+
+   - !!models.InfoModel
+     images: xinpin1.jpg
+     classify: guanggao
+
+   - !!models.InfoModel
+     images: xinpin3.jpg
+     classify: guanggao
+
+

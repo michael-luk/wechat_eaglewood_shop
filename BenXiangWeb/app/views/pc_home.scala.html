@@ -1,0 +1,126 @@
+@pc_frame("首页", "CxHomeApp", "CxHomeController") {
+<meta charset="UTF-8">
+<link rel="stylesheet" href='@routes.Assets.at("pc_css/home.css")' />
+	<link rel="stylesheet" href='@routes.Assets.at("css/pc_lb.css")' />
+	<script src='@routes.Assets.at("js/ui-bootstrap-tpls-0.12.0.min.js")'></script>
+	<script src='@routes.Assets.at("js/controllers/pc_cx_homeController.js")'></script>
+<script src='@routes.Assets.at("js/pc_home.js")'></script>
+	<link rel="stylesheet" href='@routes.Assets.at("css/pc_lb.css")' />
+	<script>
+		   function show(){
+			   document.getElementById("erweima").style.display=""
+		   }
+		   function clos1(){
+			   document.getElementById("erweima").style.display="none"
+		   }
+
+	</script>
+	<div onclick="clos1()">
+	    <div class="erweima" style="display:none; position: fixed; width: 100%;height: 100vh; background-color: rgba(0,0,0,0.5);z-index: 9; top: 0;" 
+	    	id="erweima">
+	    	<div class="erweima_main" style=" width: 400px;height: 500px;background-color: #fff;margin: 10% auto;border-radius: 7px;text-align: center;">
+	    	    <h2 style=" padding:30px 0px;  color: #B58F50;">请扫描二维码购买</h2>
+	    	    <p style=" border: 1px dashed seagreen;padding: 0;margin: 0 0 37px;"></p>
+	    	    <img src='@routes.Assets.at("pc_images/ewm.jpg")' style="width: 300px; height: 300px"/>
+	    	    <p style="text-align: right;     padding-right: 10px;" id="t2"></p>
+	    	</div>
+	    </div>
+	</div>
+	<div class="homemain">
+		@*<div class="top">
+			<img src='@routes.Assets.at("pc_images/homebg.png")'/>
+			<div class="topbnt"><a href="/p/culture" style="color: #092A24">了解更多</a></div>
+		</div>*@
+		@*轮播*@
+		<div id="slideBox" class="slideBox" style="    margin: 0 0 36px 0;" >
+			<div class="bd">
+				<carousel interval="myInterval">
+					<slide ng-repeat="ad in GgaoList" active="ad.active">
+						<img ng-src="{{ad.images | UploadImageFromSplitStr:0}}" style="margin: auto ;    width: 100%;">
+						<div class="carousel-caption">
+						</div>
+					</slide>
+				</carousel>
+			</div>
+
+			<div class="hd">
+				<ul>
+				</ul>
+			</div>
+		</div>
+		@*轮播end*@
+		<div class="theme">
+			<div class="homenav">
+				<div class="ponav">
+					<img src='@routes.Assets.at("pc_images/home_p0.png")'/>
+					<p class="homenavp1">场景分类</p>
+					@*<p class="homenavp2">2000亩种植基地，“中科院1号”优质基苗，经过1068天精心呵护</p>*@
+				</div>
+			</div>
+			
+			<div class="forimg">
+				<div class="themeimg">
+					<a href="/p/product?catalogsName=1">
+						<img src='/showimg/upload/1.png'/>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="product">
+			<div class="homenav">
+				<div class="ponav">
+					<img src='@routes.Assets.at("pc_images/home_p0.png")'/>
+					<p class="homenavp1">结缘精选</p>
+				</div>
+			</div>
+			<div class="promain">
+				<ul class="pro_ul clear">
+					<li>
+						<div class="pro_img">
+							<a href="/p/productmessage?id={{}}"><img src='@routes.Assets.at("pc_images/pro1.jpg")'/></a>
+						</div>
+						<p class="prop noWrapEllipsis">【商务送礼】莲洲·铁皮石斛礼盒装</p>
+						<div class="protext clear">
+							@*<span class="mey">￥<span class="mey_sp1">890.0</span></span>*@
+							<a><div class="probnt" onclick="show()">查看详情</div></a>
+							<div class="probnt" onclick="show()">微信购买</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		
+		</div>
+		<div class="new">
+			<div class="homenav">
+				<div class="ponav">
+					<img src='@routes.Assets.at("pc_images/home_p0.png")'/>
+					<p class="homenavp1">沉香资讯</p>
+				</div>
+			</div>
+			<div class="newstop clear">
+				<span class="newstop_sp1">本香·沉香</span>
+				<p class="newstop_p"></p>
+				<span class="newstop_sp2"><a href="/p/news">更多资讯></a></span>
+			</div>
+			<div class="newsmain clear">
+				<ul class="newsmain_ul">
+					<!-- <li>•石斛产品流行走进千家万户</li> -->
+				</ul>
+				<div class="newsmain_img">
+					<img src='@routes.Assets.at("pc_images/home_p1.png")'/>
+				</div>
+			</div>
+			
+		</div>
+	
+	</div>
+	
+
+
+
+
+
+}
+
+
+

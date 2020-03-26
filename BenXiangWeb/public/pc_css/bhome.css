@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+
+.homemain{
+    width: 1200px;
+    margin:auto;
+}
+.tittle{
+    position: relative;
+}
+.tittle_txt{
+    position: absolute;
+    width: 14%;
+    margin: auto;
+    text-align: center;
+    background: #fff;
+    font-size: 30px;
+    right: 0;
+    left: 0;
+    z-index: 6;
+}
+.tittle_line{
+    position: absolute;
+    height: 1px;
+    width: 1200px;
+    background-color: #0B3C19;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top:20px;
+}
+.box{
+    border: 1px solid #ddd;
+    color:#8A7F7F;
+}
+.culture{
+    width: 1200px;
+    margin: auto;
+}
+.culture{
+
+    margin-top: 30px;
+
+}
+.culture_main{
+    padding-top: 70px;
+    margin-bottom: 30px;
+}
+.culture_div{
+    float: left;
+    width: 40%;
+}
+.culture_b{
+     background-color: #0B3C19;
+     width: 4px;
+     height: 28px;
+     display: block;
+     float: left;
+ }
+.culture_sp{
+    float: left;
+    font-size: 24px;
+    margin-left: 10px;
+}
+.culture_i {
+    font-size: 16px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.culture_box_up_img{
+    padding: 15px;
+    width:45%
+}
+.culture_box_up{
+    padding: 20px 0;
+}
+.culture_box_up_txt{
+    width: 53%;
+    margin-left: 5px;
+}
+.culture_box_down{
+    padding: 0px 30px 20px;
+}
+.culture_box_down_ul{
+    border-top: 1px solid #ddd;
+}
+.culture_box_down_ul li{
+    width: 418px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.culture_div2{
+    width: 30%;
+    float: left;
+    margin-left: 15px;
+}
+.culture_tittle{
+    padding: 15px 0;
+    position: relative;
+}
+.culture_box2_up{
+    padding: 10px;
+}
+.culture_box2_down{
+    padding: 9px 10px;
+    font-size: 14px;
+}
+.culture_div3{
+    width: 27.5%;
+    float: left;
+    margin-left: 15px;
+
+
+}
+.speech{
+    margin-top: 14px;
+    border: 1px solid #ddd;
+}
+.speech_txt1{
+    width: 15%;
+    text-align: center;
+    font-size: 20px;
+    background-color: #447234;
+    color: #fff;
+    padding: 23px 0;
+}
+.speech_txt2{
+    width: 85%;
+    padding: 35px 15px;
+    font-size: 14px;
+    color: #666;
+    position: relative;
+    height: 175px;
+}
+.more{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+
+}
+.speech_p {
+   letter-spacing: 1px;
+}
+
+.culture_div4,.culture_div5{
+    width: 32%;
+    float: left;
+    margin: 0 8px;
+}
+.culture_tittle a{
+    position: absolute;
+    right: 11px;
+    bottom: 15px;
+    font-size: 12px;
+    color: #797979;
+}
+.retract{
+    text-indent: 20px;
+}
+.box2_tittle{
+    text-align: center;
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.join,.contact{
+    width: 48%;
+}
+.join_box{
+    border-top: 1px solid #447234;
+}
+.ssd{
+    width: 2px;
+    background-color: #ddd;
+    height: 238px;
+    margin: 83px 20px 10px;
+}
+.blogroll{
+    margin: 20px 30%;
+
+}
+.blogroll span{
+    float: left;
+}
+.blogroll ul{
+}
+.blogroll li{
+    float: left;
+    border-right: 1px solid #000;
+    padding: 0 15px;
+}

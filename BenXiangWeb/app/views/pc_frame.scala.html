@@ -1,0 +1,151 @@
+@(title: String, app: String, controller: String)(content: Html)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="Description" content="" />
+    <title>本香·沉香</title>
+        <link rel="shortcut icon" href='/assets/icon/favicon.ico'/>
+        <link rel="stylesheet" href='@routes.Assets.at("pc_css/common.css")' />
+        <script src='@routes.Assets.at("js/angular.min.js")'></script>
+        <script src='@routes.Assets.at("js/controllers/Pcframe_controller.js")'></script>
+        <script src='@routes.Assets.at("js/jquery-1.11.1.min.js")'></script>
+        <script src='@routes.Assets.at("js/dmstyle.js")'></script>
+        <script src='@routes.Assets.at("js/ourLib.js")'></script>
+        <title>深圳本香实业有限公司-沉香,线香,沉香木,沉香精油，香炉，沉香手串,沉香木手串,沉香佛珠,沉香木佛珠,沉香手链,本香沉香</title>
+        <meta name="keywords" content="沉香,线香,沉香木,沉香精油，香炉，沉香手串,沉香木手串,沉香佛珠,沉香木佛珠,沉香手链,本香沉香" />
+        <meta name="description" content="深圳首家集高端沉香品牌的科研种植、栽培推广、生产、营销为一体的综合型沉香品牌企业。热线：400-845-3388" />
+        <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "//hm.baidu.com/hm.js?c41dd22ea1822473767e0186f1359755";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+        </script>
+    </head>
+
+    <body>
+    
+        <header>
+            <div class="header_div">
+            <div class="header_div1">
+                <table style="margin-left: 913px;">
+                    <tr>
+                        <td class="table_td"><a href="javascript:void(0)" onclick="javascript:alert('加入收藏，请使用Ctrl+D进行添加')" style="text-decoration: none;color: #fff;">收藏本站</a></td>
+                        <td class="table_td2 " onmouseover="mOver(2)" onmouseout="mOut(2)" id="2">
+                            关注我们:<img src='@routes.Assets.at("pc_images/ewm.jpg")' class="home_img">
+                                <div class="erwei">
+                                    <div class="erweimg" id="c2">
+                                        <p style="    font-size: 13px;">扫一扫微信二维码下单</p>
+                                        <img src='@routes.Assets.at("pc_images/ewm.jpg")' style="width:100%"/>
+                                    </div>
+                                </div>
+                        </td>
+                    </tr>
+                    </table>
+                  </div>
+                </div>
+            <div class="home_head clear"  >
+                <div class="logo">
+                    <a href="/p/home"><img src='@routes.Assets.at("pc_images/logo.png")' alt="logo" /></a>
+                </div>
+                <div class="nav" style="    height: 119px;">
+                    <ul class="navbar clear">
+                        <li><a href="/p/home" id="dh1" class="dh1_a" >首页</a></li>
+                        <li onmouseover="mOver(1)" onmouseout="mOut(1)" id="1">
+                            <a href="/p/product?catalogsName={{homes[0].id}}" id="dh2" class="dh_a" >所有产品</a>
+                           @* <div class="classify" id="c1">
+                                <ul class="class_ul clear">
+                                    <li ng-repeat="home in homes"><a style="line-height:20px ;" href="/p/product?catalogsName={{home.id}}"><span ng-bind="home.name"></span></a> </li>
+
+                                </ul>
+                                <div class="fang"></div>
+                            </div>*@
+                        </li>
+                        <li><a href="/p/news" id="dh3" class="dh_a">新闻中心</a></li>
+                        <li><a href="/p/culture" id="dh4" class="dh_a">沉香文化 </a></li>
+                        <li><a href="/p/jidi" id="dh6" class="dh_a">沉香基地 </a></li>
+                        <li><a href="/p/about" id="dh5" class="dh_a">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div id="A2" style="min-height:500px;margin:auto;" ng-app="@app" ng-controller="@controller">@content</div>
+
+        <div class="home_bottom">
+            <div class="home_end clear">
+                <div class="bottomimg">
+                    <img src='@routes.Assets.at("pc_images/home_logo.png")'/>
+                </div>
+                <div class="bottomain">
+  @*                  <div class="row li1">
+                        <ul>
+                            <li class="special"><a >关于本香</a></li>
+                            <li><a href="/p/about#ab1">本香简介</a></li>
+                            <li><a href="/p/about#ab1.1">本香资讯</a></li>
+                            <li><a href="/p/about#ab1.2">发展历程</a></li>
+                            <li><a href="/p/about#ab1.3">董事长致辞</a></li>
+                        </ul>
+                    </div>
+                    <div class="row li2">
+                        <ul>
+                            <li class="special"><a>石斛文化</a></li>
+                            <li><a href="/p/culture#ab1">莲洲·铁皮石斛</a></li>
+                            <li><a href="/p/culture#ab2">地理环境</a></li>
+                            <li><a href="/p/culture#ab3">优质种苗</a></li>
+                            <li><a href="/p/culture#ab4">十大功效</a></li>
+                        </ul>
+                    </div>
+                    <div class="row li3">
+                        <ul>
+                            <li class="special"><a>帮助中心</a></li>
+                            <li><a href="/p/about#ab3">在线支付</a></li>
+                            <li><a href="/p/about#ab3.1">退货说明</a></li>
+                            <li><a href="/p/about#ab3.2">发票说明</a></li>
+                            <li><a href="/p/about#ab3.3">常见问题</a></li>
+                        </ul>
+                    </div>
+                    <div class="row li4">
+                        <ul>
+                            <li class="special"><a href="/p/about#ab4">联系我们</a></li>
+                            <li><a>广东本香生态实业有限公司</a></li>
+                            <li><a>客服：400-8223-208</a></li>
+                            <li><a>邮箱：yifeng@@yifeng.com</a></li>
+                            <li><a>地址：珠海市香洲区前山路76号</a></li>
+                        </ul>
+                    </div>
+                    <div class="row rowtextri">
+                        <ul>
+                            <li class="special"><a>关注我们</a></li>
+                            <li><a href="http://weibo.com/p/1005055885168904"><img style="vertical-align:top ;" src='@routes.Assets.at("pc_images/xinlang.jpg")'/>新浪微博</a>
+                            </li>
+                            <li><a href="http://t.qq.com/lianzhoutiepishi"><img style="vertical-align:top ;" src='@routes.Assets.at("pc_images/thent.jpg")'/>腾讯微博</a>
+                            </li>
+                        </ul>
+                    </div>*@
+                    <table>
+                        <tr>
+                            <td class="foot_td0"> <a style="color: #b2251c;" href="/p/home">首页</a></td>
+                            <td class="foot_td"><a style="color: #b2251c;" href="/p/product">所有产品</a></td>
+                            <td class="foot_td"><a style="color: #b2251c;" href="/p/news">新闻中心</a></td>
+                            <td class="foot_td"><a style="color: #b2251c;" href="/p/culture">沉香文化</a></td>
+                            <td class="foot_td"><a style="color: #b2251c;" href="/p/jidi">沉香基地</a></td>
+                          @*  <td class="foot_td" style="/p/home">联系我们</td>*@
+                        </tr>
+                    </table>
+                    <p class="foot_p1"><span>深圳市本香实业有限公司</span><span style="margin-left: 208px;">电话：400-845-3388</span></p>
+                    <p class="foot_p2"><span>邮箱：benxiangyuan@@sina.com</span><span style="margin-left: 163px;">地址：深圳市南山区西丽麻墈村南路36号</span></p>
+                </div>
+                <div class="bottomimg">
+                    <img src='@routes.Assets.at("pc_images/ewm.jpg")' style=" width: 106px ; height: 106px ; margin-top: 26px ;" />
+                </div>
+                <p class="bottomp">Copyright © 2016 benxiangyuan.com Inc. All Rights Reserved. 深圳本香 版权所有  粤ICP备<a href="http://www.miitbeian.gov.cn" style="color: #6c150f;">16019330</a>号</p>
+            </div>
+        </div>
+    </body>
+</html>

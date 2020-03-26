@@ -1,0 +1,133 @@
+
+
+
+
+.center_dvi1{
+	    background: url(../images/rebj.jpg) no-repeat;
+	    background-size: 100% 100%;
+	    max-height: 146px;
+	    margin-top:2%;
+}
+.center_dvi1_left img{
+/* 	border: 2px solid #0c342c;*/
+    border-radius: 50%;
+    width: 100%;
+    max-width: 113px;
+}
+.center_dvi1_left{
+	float:left;
+	padding: 3% 5.5%;
+	width:30%;
+}
+.center_dvi1_right{
+	float:left;
+	padding-top:7%;
+}
+.center_dvi1_right_p1{
+	font-size: 5vw;
+	font-weight: 700;
+}
+.center_dvi1_right_p2{
+	font-size: 3.1vw;
+	margin-top:5%;
+}
+
+
+.center_dvi2{
+	max-height:175px;
+	margin-top: 4%;
+}
+.center_dvi2_ul{
+	padding:4%;
+}
+.center_dvi2_ul li{
+	float:left;
+	width:33.3%;
+	text-align: center;
+}
+.tu_div i{
+    padding: 13%;
+    font-size: 4.6vw;
+    border: 2px solid  #581505;
+    border-radius: 50%;
+}
+.center_dvi2_ul p{
+	margin-top: 23%;
+    font-size: 3.1vw;
+}
+.center_dvi3_left{
+	float: left;
+    width: 80%;   
+}
+.center_dvi3_left i{
+	 font-size: 5vw;  
+	 color:#888888;   
+}
+.center_dvi3_left span{
+	font-size: 4.4vw;   
+}
+.center_dvi3_right i{
+	font-size:7vw;  
+	
+}
+.center_dvi3_right{
+	float: right;
+    width: 20%;
+    text-align: right;
+}
+.center_dvi3_ul li{
+    padding: 6% 9%;
+    border-bottom: 2px solid #faf6f2;
+}
+.litx{
+	border-top: 10px solid #faf6f2;
+}
+
+@media only screen and (min-width: 500px) {
+    .center_dvi1_right_p1{
+		font-size:24px;
+	}
+	.center_dvi1_right_p2{
+		font-size:20px;
+	}
+	.center_dvi2{
+		max-height:175px;
+		margin-top: 25px;
+	}
+	.center_dvi2_ul p{
+		margin-top: 16px;
+    	font-size: 20px;
+	}
+	.center_dvi2_ul{
+		padding:0 0 4%;
+	}
+	.tu_div i{
+		width: 75px;
+	    height: 75px;
+	    font-size: 30px;
+	    border: 2px solid  #581505;
+	    border-radius: 50%;
+	    line-height: 75px;
+    }
+    
+    .center_dvi3_left i{
+	 	font-size:24px;     
+	}
+	.center_dvi3_left span{
+		font-size: 20px;   
+	}
+	.center_dvi3_right i{
+		font-size:30px;  
+	}
+
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

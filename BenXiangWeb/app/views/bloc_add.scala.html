@@ -1,0 +1,12 @@
+ @bloc_frame("加入本香", "addApp", "addController") {
+<meta charset="UTF-8">
+ <link rel="stylesheet" href='@routes.Assets.at("pc_css/news2.css")'>
+ <script src='@routes.Assets.at("js/controllers/bloc_add_controller.js")'></script>
+
+<div class="news2" ng-repeat="add in adds">
+	<div class="mwen2">
+		<p class="p2new" ng-bind-html="add.description1 | safehtmls" ></p>
+	</div>
+</div>
+
+}

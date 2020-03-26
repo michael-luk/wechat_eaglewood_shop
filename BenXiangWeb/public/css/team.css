@@ -1,0 +1,89 @@
+
+section{
+    background-color: #faf6f2;
+    padding-top: 2%;
+}
+
+.myOrder_top{
+	background-color: #fff;
+}
+
+.myOrder_top_ul{
+	text-align: center;
+	    margin-bottom: 2%
+}
+.myOrder_top_ul li{
+    float: left;
+    font-size: 4.4vw;
+    width: 25%;
+    padding:1% 0;
+    position: relative;
+}
+
+.myOrder_top_ul p{
+    position: absolute;
+    right: 0;
+    width: 1px;
+    background-color: #581505;
+    height: 35%;
+    top: 35%;
+}
+.myOrder_top_ul span {
+    font-size: 3.8vw;
+}
+
+
+
+.teamman{
+    background-color: #fff;
+    margin-bottom: 2%;
+}
+.center_dvi1 img{
+/* 	border: 2px solid #0c342c;*/
+    border-radius: 50%;
+    width: 100%;
+    max-width: 113px;
+}
+.center_dvi1{
+    float: left;
+    width: 30%;
+	padding: 3% 5.5%;
+	margin-left: 5%;
+}
+
+.center_dvi1_right{
+    float: left;
+    width: 60%;
+    padding: 2.5% 0;
+
+}
+.center_dvi1_right p{
+	  font-size: 4.4vw;
+}
+.center_dvi1_right_p1{
+	font-weight: 700;
+}
+.center_dvi1_right_p2{
+	
+}
+
+
+@media only screen and (min-width: 500px) {
+.myOrder_top_ul li{
+    font-size: 20px;
+}
+.myOrder_top_ul span {
+    font-size: 14px;
+}
+.center_dvi1_right p{
+	  font-size:20px;
+}
+.center_dvi1 {
+
+    padding: 20px 48px;
+
+}
+}
+	
+
+

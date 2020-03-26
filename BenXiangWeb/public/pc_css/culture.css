@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+
+.homemain{
+    width: 100%;
+    min-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.culture{
+    width: 100%;
+    min-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+}

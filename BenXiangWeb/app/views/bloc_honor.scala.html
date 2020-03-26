@@ -1,0 +1,12 @@
+ @bloc_frame("资质荣誉", "honorApp", "honorController") {
+<meta charset="UTF-8">
+ <link rel="stylesheet" href='@routes.Assets.at("pc_css/news2.css")'>
+ <script src='@routes.Assets.at("js/controllers/bloc_honor_controller.js")'></script>
+
+<div class="news2" ng-repeat="honor in honors">
+	<div class="mwen2">
+		<p class="p2new" ng-bind-html="honor.description1 | safehtmls" ></p>
+	</div>
+</div>
+
+}

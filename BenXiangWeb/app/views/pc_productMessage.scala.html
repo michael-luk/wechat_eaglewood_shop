@@ -1,0 +1,97 @@
+@pc_frame("首页", "ProductMessageApp", "ProductMessageController") {
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href='@routes.Assets.at("css/productMessage.css")' />
+    <link rel="stylesheet" href='@routes.Assets.at("pc_css/product.css")' />
+    <script src='@routes.Assets.at("js/controllers/productMessage_controller.js")'></script>
+    <script src='@routes.Assets.at("js/ui-bootstrap-tpls-0.12.0.min.js")'></script>
+    <script src='@routes.Assets.at("js/ourLib.js")'></script>
+    <link rel="stylesheet" href='@routes.Assets.at("css/pc_lc.css")' />
+    <script>
+            function show(){
+                document.getElementById("erweima").style.display=""
+            }
+            function clos1(){
+                document.getElementById("erweima").style.display="none"
+            }
+
+    </script>
+    <div class="P_main">
+       <div class="up clear" >
+           <div class="up_left">
+               @*轮播*@
+               <div id="slideBox" class="slideBox" style="    margin: 0 0 36px 0;">
+                   <div class="bd">
+                       <carousel interval="myInterval">
+                           <slide ng-repeat="slide in slides" active="slide.active">
+                               <img ng-src="{{slide.images}}" style="margin: auto ;">
+                               <div class="carousel-caption">
+                               </div>
+                           </slide>
+                       </carousel>
+                   </div>
+
+                   <div class="hd">
+                       <ul>
+                       </ul>
+                   </div>
+               </div>
+               @*轮播end*@
+           </div>
+           <div class="up_right">
+               <p class="up_left_p1" ng-bind="product.name">[商务送礼]莲洲铁皮石斛微粉(12支装)</p>
+               <p class="up_left_p2" ng-bind="product.shortDesc">香韵醇厚 甘甜</p>
+               <p class="up_left_p3">价&nbsp;&nbsp;格:<span style="font-size:20px; font-weight:bold;color:black;margin-left:10px;" >&yen;<span ng-bind="product.price"></span ></span></p>
+               <p class="up_left_p4">材质：<span style="font-size:15px; font-weight:bold;color:black;margin-left:10px;" ><span ng-bind="product.comment"> </span></span></p>
+               <div class="up_button" onclick="show()">微信购买</div>
+           </div>
+       </div>
+       <div class="doment clear">
+           <div class="doment_left">
+               <p class="doment_left_p1"> 热销产品 <span style="font-size: 14px;margin-left: 191px;">更多>></span></p>
+               <div class="doment_left_div1" ng-repeat="ProductListHotSale in ProductListHotSale">
+                   <a href="/p/productmessage?id={{ProductListHotSale.id}}" style="    color: black;">
+                   <div class="doment_left_div2">
+                       <img src="/showimg/upload/{{ProductListHotSale.images | getFirstImageFromSplitStr:0 }}" style="width: 100%;height: 276px;">
+                   </div>
+                   </a>
+                   <div class="doment_left_div3">
+                       <a href="/p/productmessage?id={{ProductListHotSale.id}}" style="    color: black;">
+                       <p class="doment_left_div3_p1" ng-bind="product.name">莲洲铁皮石斛微粉莲洲铁皮石斛微粉莲洲铁皮石斛微粉</p>
+                           </a>
+                       <p class="doment_left_div3_p2">&yen;&nbsp;<span ng-bind="product.price"></span></p>
+                   </div>
+
+               </div>
+
+           </div>
+           <div class="doment_right">
+               <p class="doment_right_p1"> 产品详情</p>
+               <div class="doment_right_div1">
+                   <img src="/showimg/upload/{{description}}" style=" width: 100%;" ng-repeat="description in description">
+               </div>
+           </div>
+       </div>
+    </div>
+
+    <div onclick="clos1()">
+        <div class="erweima" style="display:none; position: fixed; width: 100%;height: 100vh; background-color: rgba(0,0,0,0.5);z-index: 9; top: 0;"
+        id="erweima">
+            <div class="erweima_main" style=" width: 400px;height: 500px;background-color: #fff;margin: 10% auto;border-radius: 7px;text-align: center;">
+                <h2 style=" padding:30px 0px;  color: #B58F50;">请扫描二维码购买</h2>
+                <p style=" border: 1px dashed seagreen;padding: 0;margin: 0 0 37px;"></p>
+                <img src='@routes.Assets.at("pc_images/ewm.jpg")' style="width: 300px; height: 300px"/>
+                <p style="text-align: right;     padding-right: 10px;" id="t2"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+            function show(){
+                document.getElementById("erweima").style.display=""
+            }
+            function clos1(){
+                document.getElementById("erweima").style.display="none"
+            }
+
+    </script>
+}
+

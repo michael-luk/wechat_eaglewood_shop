@@ -1,0 +1,140 @@
+
+section{
+    height: 100vh;
+    background-color: #eeeeee;
+}
+.coupon_top{
+	background-color: #fff;
+}
+
+
+.coupon_top_ul{
+	text-align: center;
+}
+.coupon_top_ul li{
+    float: left;
+    font-size:16px;
+    width: 50%;
+
+}
+.coupon_top_ul p{
+    padding: 9% 0;
+    width: 55%;
+    margin: 0 auto;
+}
+.coupon_top_ul p:hover{
+    border-bottom: 3px solid #f08300;	
+        color: #f08300;
+}
+.coupontext{
+	text-align: center;
+    width: 90%;
+    margin: 3% auto 0;
+    background-color: #fff;
+    padding: 3%;
+    font-size: 18px;
+    color: #f08300;
+    border: 1px solid #e2e2e2;
+        letter-spacing: 2px;
+}
+.couponmain{
+	width: 90%;
+    margin: 3% auto 0;
+}
+.couponmain_ul{
+	background-color: #fff;
+	    border-radius: 6px;
+
+}
+.couponmain_ul li{
+	
+}
+.ponli1{
+	position: relative;
+    background-color: #f08300;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    color: #fff;
+    padding: 2% 0;
+}
+.unponli1{
+	position: relative;
+    background-color: #ddd;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    color: #fff;
+    padding: 2% 0;
+}
+.li1_left{
+	float: left;
+	padding: 0 3%;
+}
+.left_p1{
+	font-size: 25px;
+	font-weight: 600;
+}
+.left_p2{
+	font-size: 18px;
+}
+.li1_right p{
+    border: 1px solid #fff;
+    font-size: 17px;
+    padding: 2%;
+    width: 65px;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 4px;
+    margin-right: 9%;
+}
+.li1_right{
+    float: right;
+    padding: 0 3%;
+    width: 50%;
+    text-align: -webkit-right;
+}
+.couponimg{
+	position: absolute;
+    bottom:-10px;
+}
+.ponli2{
+    margin-top: 10px;
+    padding: 0.5% 0 5%;
+}
+.li2_p1{
+	padding: 0 3%;
+    font-size: 16px;
+    font-weight: 500;
+}
+.li2_p2{
+    padding: 0 3%;
+    font-size: 14px;
+    margin-top: 5px;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

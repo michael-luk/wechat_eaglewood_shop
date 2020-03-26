@@ -1,0 +1,101 @@
+section{
+    background-color: #faf6f2;
+   padding-top: 3%;
+}
+
+
+
+.center_dvi1{
+	    background: url(../images/rebj.jpg) no-repeat;
+	    background-size: 100% 100%;
+	    max-height: 146px;
+    padding-bottom: 3%;
+}
+.center_dvi1_left img{
+    border-radius: 50%;
+    width: 100%;
+    max-width: 113px;
+}
+.center_dvi1_left{
+	float:left;
+	padding: 3% 5.5%;
+	width:30%;
+}
+.center_dvi1_right{
+	float:left;
+	padding-top:7%;
+}
+.center_dvi1_right_p1{
+    font-size: 4.4vw;
+}
+.center_dvi1_right_p2{
+    font-size: 4.4vw;
+	margin-top:5%;
+}
+
+
+.center_dvi3{
+    background-color: #fff;
+    margin-bottom: 20%;
+}
+.center_dvi3_left{
+	float: left;
+    width: 80%;   
+}
+.center_dvi3_left i{
+	 font-size: 5vw;  
+	 color:#888888;   
+}
+.center_dvi3_left span{
+	font-size: 4.4vw;   
+}
+.center_dvi3_right i{
+	font-size:7vw;  team
+	
+}
+.center_dvi3_right{
+	float: right;
+    width: 20%;
+    text-align: right;
+}
+.center_dvi3_ul li{
+    padding: 4% 9%;
+    border-bottom: 2px solid #faf6f2;
+}
+.litx{
+	border-top: 10px solid #faf6f2;
+}
+
+
+
+
+@media only screen and (min-width: 500px) {
+    .center_dvi1_right_p1{
+		font-size:24px;
+	}
+	.center_dvi1_right_p2{
+		font-size:20px;
+	}
+    
+    .center_dvi3_left i{
+	 	font-size:24px;     
+	}
+	.center_dvi3_left span{
+		font-size: 20px;   
+	}
+	.center_dvi3_right i{
+		font-size:30px;  
+	}
+
+}	
+	
+	
+
+
+
+
+
+
+
+
+

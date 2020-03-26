@@ -1,0 +1,255 @@
+@bloc_frame("首页", "homeApp", "homeController") {
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href='@routes.Assets.at("pc_css/bhome.css")' />
+    <link rel="stylesheet" href='@routes.Assets.at("css/bootstrap.min.css")' />
+    <script src='@routes.Assets.at("js/ui-bootstrap-tpls-0.12.0.min.js")'></script>
+    <script src='@routes.Assets.at("js/controllers/blocHome_controller.js")'></script>
+
+    <div class="homemain">
+        @*轮播*@
+        <div class="carousel">
+            @*<img src='@routes.Assets.at("pc_images/logo_buttom.png")'>*@
+            <div id="slideBox" class="slideBox">
+                <div class="bd" style="position: relative;">
+                    <carousel interval="myInterval">
+                        <slide ng-repeat="slide in slides" active="ad.active">
+                            <img ng-src="/showimg/upload/{{slide.images}}" style="margin: auto;height:500px;" >
+                        </slide>
+                    </carousel>
+                </div>
+            </div>
+        </div>
+
+
+        @*集团文化*@
+        <div class="culture">
+            <div class="tittle">
+                <p class="tittle_txt">集团文化</p>
+                <p class="tittle_line"></p>
+            </div>
+            <div class="culture_main clear">
+                <div class="culture_div">
+                    <p class="clear culture_tittle">
+                        <b class="culture_b"></b>
+                        <span class="culture_sp">集团简介</span>
+                        <i class="culture_i">PROFILE</i>
+                    </p>
+                    <div class="box">
+                        <div class="culture_box_up clear">
+                            <div class="culture_box_up_img left">
+                                <img src='@routes.Assets.at("pc_images/about3.png")'>
+                            </div>
+                            <div class="culture_box_up_txt left">
+                                <p>本香生态集团有限公司是一家大型综合性企业，旗下近10家企业和社会组织，业务涵盖建筑、化工、贸易、林业、种植、文化、慈善等领域。公司实力雄厚，社会责任强，现致力于投资近10亿元的本香生态养.......</p>
+                            </div>
+                        </div>
+                        <div class="culture_box_down">
+                            <ul class="culture_box_down_ul">
+                                <li>· 香港著名综艺3节目“吾熟吾食”专访本香生态养生....</li>
+                                <li>· 本香集团开始走向旅游文化、美食文化的新方向</li>
+                                <li>· 香港著名综艺3节目“吾熟吾食”专访本香生态养生园...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="/b/staff">
+                    <div class="culture_div2">
+                        <p class="clear culture_tittle">
+                            <b class="culture_b"></b>
+                            <span class="culture_sp">员工风采</span>
+                            <i class="culture_i">STYLE</i>
+                        </p>
+                        <div class="box">
+                            <div class="culture_box2_up clear">
+                                <img src='@routes.Assets.at("pc_images/about3.png")'>
+                            </div>
+                            <div class="culture_box2_down">
+                                为感谢一线员工对公司发展的付出，答谢家属对员工工作的支持，同时也为让家属实地了解员工工作与生活和谐度、幸福度，3月17-18日，本香集团...  >>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="culture_div3">
+                    <video width="330px" controls="controls"  autoplay="autoplay">
+                        @*<source src="movie.ogg" type="video/ogg">*@
+                        <source src='@routes.Assets.at("images/new.mp4")' type="video/mp4">
+                    </video>
+                    <div class="speech clear">
+                        <div class="left speech_txt1">董<br>事<br>长<br>寄<br>语<br></div>
+                        <div class="left speech_txt2">
+                            <p class="speech_p">我们时刻以清醒的头脑去看待质量，永远不忽视质量链中的任何环节，在企业的软硬件环境和空间中体现出严格的质量水准，从此从根......</p>
+                            <a href="/b/chairman"><p class="more">更多 >></p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        @*新农村产业*@
+        <div class="culture">
+            <div class="tittle">
+                <p class="tittle_txt">新农村产业</p>
+                <p class="tittle_line"></p>
+            </div>
+            <div class="culture_main clear">
+                <div class="culture_div4">
+                    <p class="clear culture_tittle">
+                        <b class="culture_b"></b>
+                        <span class="culture_sp">本香生态园基地</span>
+                        <i class="culture_i">BASE</i>
+                        <a href="/b/matrixa">更多 >></a>
+                    </p>
+                    <div class="box">
+                        <div class="culture_box2_up clear">
+                            <img src='@routes.Assets.at("pc_images/about3.png")'>
+                        </div>
+                        <div class="culture_box2_down">
+                            为感谢一线员工对公司发展的付出，答谢家属对员工工作的支持，同时也为让家属实地了解员工工作与生活和谐度、幸福度，3月17-18日，本香集团...  >>
+                        </div>
+                    </div>
+                </div>
+                <div class="culture_div4">
+                    <p class="clear culture_tittle">
+                        <b class="culture_b"></b>
+                        <span class="culture_sp">生产监控</span>
+                        <i class="culture_i">MONITOR</i>
+                        <a>更多 >></a>
+                    </p>
+                    <div class="box">
+                        <div class="culture_box2_up clear">
+                            <img src='@routes.Assets.at("pc_images/about3.png")'>
+                        </div>
+                        <div class="culture_box2_down">
+                            为感谢一线员工对公司发展的付出，答谢家属对员工工作的支持，同时也为让家属实地了解员工工作与生活和谐度、幸福度，3月17-18日，本香集团...  >>
+                        </div>
+                    </div>
+                </div>
+                <div class="culture_div4" ng-repeat="plan in plans" >
+                    <p class="clear culture_tittle">
+                        <b class="culture_b"></b>
+                        <span class="culture_sp">生产规划</span>
+                        <i class="culture_i">PLANNING</i>
+                        <a href="/b/plan">更多 >></a>
+                    </p>
+                    <div class="box">
+                        <div class="culture_box2_up clear">
+                            @*<img src='@routes.Assets.at("pc_images/about3.png")'>*@
+                            <img ng-src="/showimg/upload/{{plan.images}}">
+                        </div>
+                        <div class="culture_box2_down">
+                            <span ng-bind="plan.description2"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        @*旅游养生*@
+        <div class="culture">
+            <div class="tittle">
+                <p class="tittle_txt">旅游养生</p>
+                <p class="tittle_line"></p>
+            </div>
+            <div class="culture_main clear regimen">
+                <div class="culture_div5">
+                    <div class="box">
+                        <div class="culture_box2_up clear">
+                            <img src='@routes.Assets.at("pc_images/about3.png")'>
+                        </div>
+                        <div class="culture_box2_down ">
+                            <p class="box2_tittle">生态基地珍稀动植物园</p>
+                            <p class="retract">当我们来到植物观光园大门前，便可看到一个用铁皮石斛造型建设的一座既有艺术感又有自然生态美的独特风格园区大门，透过大门往里看，一条长长的“百仙果”绿色通道跃入我们的视线……</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="culture_div5">
+                    <div class="box">
+                        <div class="culture_box2_up clear">
+                            <img src='@routes.Assets.at("pc_images/about3.png")'>
+                        </div>
+                        <div class="culture_box2_down ">
+                            <p class="box2_tittle">养生美味，边赏边吃</p>
+                            <p class="retract">走出植物观光园，登上莲溪水库堤坝，我们可以坐于田园诗园林，品着九大仙草之首的铁皮石斛茶，尝尝鲜美的养生鸡汤，纯大自然的鸡鸭鱼，各种美味，冲击着你的蓓蕾，滋养着你的身心......</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="culture_div5">
+                    <div class="box">
+                        <div class="culture_box2_up clear">
+                            <img src='@routes.Assets.at("pc_images/about3.png")'>
+                        </div>
+                        <div class="culture_box2_down ">
+                            <p class="box2_tittle">住这里，别有一番体验</p>
+                            <p class="retract">以天然竹林为建材的度假温馨小木屋，在库区岸边种植四季不同的花草植物，并修建一条环绕水库四周的休闲观光绿色通道，在这里，体验五星级酒店给不了你的闲适颐神和豁达开阔......</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @*加盟与联系*@
+        <div class="clear">
+            <div class="left join">
+                <p class="clear culture_tittle">
+                    <span class="culture_sp">招商加盟</span>
+                    <i class="culture_i">JOIN US</i>
+                    <a href="/b/join">更多 >></a>
+                </p>
+                <div class="join_box" ng-repeat="join in joins">
+                    <div class="culture_box_up clear">
+                        <div class="culture_box_up_img left">
+                            @*<img src='@routes.Assets.at("pc_images/about3.png")'>*@
+                            <img ng-src="/showimg/upload/{{join.images}}">
+                        </div>
+                        <div class="culture_box_up_txt left">
+                            <p style="padding: 11px 0;" ng-bind-html="join.description2 | safehtmls">
+                                本香招商加盟，低投入，低风险，高回报。只要你有资源你有条件，就可以加入我们，我们对您全程指导，这里有强大的平台支撑，这里有厚实的产业资源。
+                                <br>
+                                <br>
+                                <br>
+                                加盟热线:400-623-7577
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="left ssd"></div>
+
+
+            <div class="left contact">
+                <p class="clear culture_tittle">
+                    <span class="culture_sp">联系我们</span>
+                    <i class="culture_i">CONTACT US</i>
+                    <a href="/b/contact">更多 >></a>
+                </p>
+                <div class="join_box"  ng-repeat="contact in contacts">
+                    <div class="culture_box_up clear">
+                        <div style="line-height: 26px;" ng-bind-html="contact.description2 | safehtmls">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        @*友情链接*@
+        <div class="blogroll clear">
+            <span>友情链接：</span>
+            <ul class="clear" ng-repeat="al in als">
+                <a href="http://{{al.url}}"><li><span ng-bind="al.name"></span></li></a>
+                <li>网站建设</li>
+                <li>APP开发</li>
+                <li>微信商城</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+}                                                                                                                                                                                                                                                                                                                                                                         

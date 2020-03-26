@@ -1,0 +1,55 @@
+
+.home{
+   
+}
+.homeclass{
+    position: relative;
+    padding: 2.5% 0 0;
+}
+.classtext{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(88,21,5,0.60);
+    color: #fff;
+    padding: 2% 5%;
+}
+.textleft{
+    float: left;
+    width: 89%;
+}
+.textright{
+    float: right;
+    width: 8%;
+    text-align: right;
+    padding-top: 4%;
+}
+.textleft_p1{
+    font-size: 7.5vw;
+}
+.textleft_p2{
+    font-size: 3.75vw;
+        padding: 2% 0;
+}
+.textright i{
+    font-size: 12.5vw;
+}
+
+
+
+
+
+
+@media only screen and (min-width:500px) {
+    .textright i{
+        font-size:80px;
+    }
+    .textleft_p2{
+        font-size:24px;
+    }
+    .textleft_p1{
+        font-size:48px;
+    }
+   
+
+}

@@ -1,0 +1,41 @@
+@pc_frame("新闻资讯", "newsApp", "newsController") {
+<meta charset="UTF-8">
+ <link rel="stylesheet" href='@routes.Assets.at("pc_css/news.css")'>
+ <script src='@routes.Assets.at("js/controllers/news_controller.js")'></script>
+<div class="news">
+ 	<ul class="news_ul clear" style="min-height:500px;padding: 0 89px;">
+ 		<li class="clear" ng-repeat="new in news">
+ 			<a href="/p/news2?newid={{new.id}}">
+	 			<div class="news_ul_img">
+	 				<img ng-src='/showimg/upload/{{new.images}}'>
+	 			</div>
+	 			<div class="news_ul_txt">
+	 				<p class="ul_txt_p1" ng-bind="new.name"></p>
+	 				<p class="ul_txt_p2"><span  ng-bind-html="new.description1 | safehtmls"></p>
+	 			</div>
+ 			</a>
+ 		</li>
+ 	</ul>
+</div>
+	<div ng-show="pageInfo">
+		<div style="text-align: center;padding: 40px 0;">
+			<a href="" ng-click="goPrevPage()" ng-show="pageInfo.hasPrev">上一页</a>
+			<span ng-hide="pageInfo.hasPrev">上一页</span>
+			<span>
+				<span>第</span>
+				<input type="text" ng-Model="jumpPage" style="width:40px;height:20px"/>
+				<span>页</span>
+
+				<button ng-click="goJumpPage()" style="width: 35px; height: 20px;color: #fff; background-color: #ce001f; border: 0; line-height: 20px;">
+					Go>
+				</button>
+
+
+				<span>共{{pageInfo.total}}页</span>
+			</span>
+			<a href="" ng-click="goNextPage()"  ng-show="pageInfo.hasNext" >下一页</a>
+			<span ng-hide="pageInfo.hasNext">下一页</span>
+		</div>
+	</div>
+}
+

@@ -1,0 +1,160 @@
+section {
+	height: 100vh;
+	background: #f6f6f6;
+	padding-top: 3%;
+}
+
+.orderderailmain {
+	line-height: 45px;
+	background: #FFFFFF;
+}
+
+.orderderailmain div {
+	border-bottom: 1px solid #e2e2e2;
+	padding: 0 12px;
+	font-size: 3.6vw;
+}
+
+.orderderailmain-p1,.orderderailmain-p3 {
+	float: left;
+    width: 22%;
+
+}
+
+.orderderailmain-p2 {
+	float: right;
+	
+	text-align: center;
+	color: #d75549;
+}
+
+.address_pledm {
+	    margin-top: 3%;
+    font-size: 3.6vw;
+	line-height: 34px;
+	background: #fff;
+	padding: 0 12px;
+}
+
+.billleft {
+	float: left
+}
+
+.billright {
+	float: right
+}
+
+.special {
+	font-size: 20px;
+	color: #d75549;
+}
+
+.payment {
+    position: fixed;
+    font-size: 14px;
+    line-height: 27px;
+    background: #fff;
+    padding: 0 12px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	
+}
+
+.delivery {
+	font-size: 14px;
+	line-height: 45px;
+	background: #fff;
+}
+
+.buy {
+	margin-top: 3%;
+	background: #fff;
+    border-top: 1px solid #e2e2e2;
+    padding: 0 2%;
+}
+
+.purchase img {
+	width: 50px;
+	height: 50px;
+}
+
+.acquisition {
+	float: right;
+	width: 80%;
+	padding-top: 5px;
+}
+
+.acquisition_shu span {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	/* text-align: right;*/
+}
+
+.acquisition_money {
+	float: right;
+	width: 80%;
+	margin-top: -20px;
+	font-size: 14px;
+}
+.acquisition_span1 {
+	margin-right: 10px;
+	color: #d75549;
+	font-size: 20px;
+	float: right;
+}
+.purchase{
+    border-bottom: 1px solid #ddd;
+    padding: 1% 0;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 500px) {
+	
+.orderderailmain div {
+	    font-size: 16px;
+}
+.address_pledm{
+	    font-size: 16px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

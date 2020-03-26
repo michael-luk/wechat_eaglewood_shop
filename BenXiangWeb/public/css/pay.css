@@ -1,0 +1,36 @@
+
+section{
+    padding-top: 2%;
+    background-color: #faf6f2;
+}
+.weixin{
+	background-color: #fff;
+    padding: 2%;
+        font-size: 15px;
+}
+.weixin-p1{
+    padding-top: 4%;
+}
+.weixin2{
+	    background-color: #fff;
+    margin-top: 4%;
+    padding: 2%;
+    font-size: 16px;
+}
+.pay{
+    border: 1px solid #70BA0F;
+    background-color: #70BA0F;
+    width: 80%;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 2% 0;
+    margin: 7% auto;
+}
+.newpay-p3{
+	    margin-top: 4%;
+    text-align: center;
+    font-size: 4.4vw;
+	
+}

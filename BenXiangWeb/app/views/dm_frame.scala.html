@@ -1,0 +1,64 @@
+@(title: String, app: String, controller: String)(content: Html)
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="utf-8">
+			<!--  移动端页面设置视口宽度等于设备宽度，并禁止缩放。-->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+
+		<link rel="stylesheet" type="text/css" href='@routes.Assets.at("css/common.css")' />
+		<link rel="stylesheet"  href='@routes.Assets.at("css/font-awesome.min.css")'>
+		<link rel="stylesheet" href='@routes.Assets.at("css/bootstrap.min.css")' />
+		<script src='@routes.Assets.at("js/angular.min.js")'></script>
+		<script src='@routes.Assets.at("js/jquery-1.11.1.min.js")'></script>
+		<script src='@routes.Assets.at("js/controllers/common_controller.js")'></script>
+		<script src='@routes.Assets.at("js/dmstyle.js")'></script>
+		<script src='@routes.Assets.at("js/ourLib.js")'></script>
+		<title>沉香、线香、沉香手串、沉香佛珠手链、沉香念珠、沉香挂件、沉香手把件、沉香木板件、沉香器皿、香炉等-深圳市本香实业有限公司</title>
+		<meta name="Keywords" content="纯天然沉香、线香、沉香手串、沉香佛珠手链、沉香念珠、沉香挂件、沉香手把件、沉香木板件、沉香器皿、香炉、沉香原木、沉香作用、沉香功效" />
+		<meta name="Description" content="本香沉香主要经营：天然沉香，线香，沉香手串，沉香佛珠手链，沉香念珠，沉香挂件，沉香手把件，沉香木摆件和线香、熏料、香粉、香炉等产品，欢迎拨打电话：400-845-3388咨询。" />
+	</head>
+
+	<body>
+
+		<div ng-app="@app" ng-controller="@controller">
+		@content
+		</div>
+
+
+		<footer ng-app="commonApp" ng-controller="commonController" id=A2 style="z-index:1;">
+			<ul class="footer_ul clear">
+				<a href="/w/home">
+					<li id="li1">
+						<i class="icon-home"></i>
+						<p>首页</p>
+					</li>
+				</a>
+				<a href="/w/allProduct?homeid=1">
+					<li id="li2">
+						<i class="icon-th-large"></i>
+						<p>所有产品</p>
+					</li>
+				</a>
+				<a href="/w/cart">
+					<li id="li3">
+						<i class="icon-shopping-cart "></i>
+						<p>购物车<span ng-if="cart.items.length!=0">(<span ng-bind="cart | cartCalculate"></span>)</span></p>
+							<!--  <div class="mun"><span ng-bind="cart | cartCalculate"></span></div> -->
+					</li>
+				</a>
+				<a href="/w/userCenter">
+					<li  id="li4">
+						<i class="icon-user "></i>
+						<p>个人中心</p>
+					</li>
+				</a>
+			</ul>
+		</footer>
+
+	</body>
+</html>

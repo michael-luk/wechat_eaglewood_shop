@@ -1,0 +1,14 @@
+ @bloc_frame("招商加盟", "joinApp", "joinController") {
+<meta charset="UTF-8">
+ <link rel="stylesheet" href='@routes.Assets.at("pc_css/news2.css")'>
+ <script src='@routes.Assets.at("js/controllers/bloc_join_controller.js")'></script>
+
+<div class="news2" ng-repeat="join in joins">
+	<div class="mwen2">
+	 	<h1 ng-bind="join.name"></h1>
+	 	<p class="p1new" ng-bind="join.createdAtStr"></p>
+		<p class="p2new" ng-bind-html="join.description1 | safehtmls" ></p>
+	</div>
+</div>
+
+}
